@@ -1,11 +1,60 @@
+/* Утиліти */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--logo-color: rgb(216, 216, 230);
+}
+
+/* Шапка сторінки */
 .header {
-    background-color: aqua;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 75px;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-image: url(../images/header.jpg);
+
+	background-color: rgb(104, 3, 20);
 }
 
-.link {
-    color: blue;
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	border: 1px solid red;
 }
 
-.icon-nav {
-    color: red;
+.header-hero .nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+	fill: var(--logo-color);
+
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.20;
+	letter-spacing: 0.03em;
+	color: var(--logo-color);
+
+	text-decoration: none;
 }
